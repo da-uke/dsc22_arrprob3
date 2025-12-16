@@ -18,3 +18,14 @@ for i in range(n):
         y0+=1
 for i in range(n):
     print(a[i] ,end=" ")
+arr=array('i',[6,9,2,3,7,4,3,7,5,3])
+minel=9999
+maxel=0
+l=len(arr)
+for i in range(l):
+    if arr[i]<minel:
+        minel=arr[i]
+    elif arr[i]>maxel:
+        maxel=arr[i]
+print("\n",maxel-minel ,minel,maxel)
+
